@@ -17,7 +17,7 @@ io.on('connection', socket => {
   socket.on('move', data => {
     io.to('game-room').emit('move', data);
   });
-
+//tipo
   socket.on('disconnect', () => {
     console.log('Um jogador se desconectou');
   });
