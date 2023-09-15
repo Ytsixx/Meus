@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #333;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #eee;
+}
+
+.cell.x {
+  color: #007bff;
+}
+
+.cell.o {
+  color: #ff5722;
+}
